@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinic Online Logbook</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="logbook.css">
+  </head>
+  <body>
+    <div class="container-fluid text-center" id="header">
+      <div class="banner">
+        <p>WELCOME TO CLINIC ONLINE LOGBOOK</p>
+      </div>
+  </div>
+
+  <div id="student" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">           
+                  <div class="modal-body">
+                    <div class="well">
+                      <form>
+                        <div class="form-group">
+                          <label for="I.D">ENTER ID:</label>
+                          <input type="POST" class="form-control" id="email" placeholder="Student/Faculty ID" required="true">
+                          <button class="btn btn-primary btn-lg gradient" type="submit">LOG IN</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+
+            </div>
+        <div id="guest" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">           
+                  <div class="modal-body">
+                    <div class="well">
+                      <form>
+                        <div class="form-group">
+                        <label for="I.D">ENTER NAME:</label>
+                        <input type="POST" class="form-control" id="email" placeholder="Full Name" required>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                  <button class="btn btn-primary btn-lg gradient" type="submit" data-dismiss="modal">LOG IN</button>
+                  </div>
+              </div>
+            </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="panel panel-default">
+          <div id="clockbox"></div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg gradient" data-toggle="modal" data-target="#student">LOG IN FOR STUDENT/FACULTY</button>
+        <button type="button" class="btn btn-primary btn-lg gradient" data-toggle="modal" data-target="#guest">LOG IN FOR GUEST</button> 
+        <div class="container" id="table">
+          <h3>LOG-IN HISTORY</h3> 
+          <div class="panel panel-default">
+          <div class="table-responsive">        
+              <table class="table" id="login">
+                <thead>
+                    <tr>
+                    <th>NAME</th>
+                    <th>LOGIN DATE AND TIME</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td>julieta adlaon</td>
+                    <td>Monday, November 6, 2017, 9:15 PM</td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+      </div>    
+      </div>
+      <div class="col-md-8">
+        <img src="WF1Resize2.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-bottom fixed-bottom">
+    <div class="container">
+       <p id="footer">Copyright © Clinic of Mindanao State University-Iligan Institute of Technology. All right reserved.</p>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="logbook.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
