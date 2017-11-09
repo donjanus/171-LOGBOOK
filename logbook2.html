@@ -13,7 +13,8 @@
   <body>
     <div class="container-fluid text-center" id="header">
       <div class="banner">
-        <p>WELCOME TO CLINIC ONLINE LOGBOOK</p>
+        WELCOME TO CLINIC ONLINE LOGBOOK
+        <hr>
       </div>
   </div>
 
@@ -25,7 +26,8 @@
                       <form>
                         <div class="form-group">
                           <label for="I.D">ENTER ID:</label>
-                          <input type="POST" class="form-control" id="email" placeholder="Student/Faculty ID" required="true">
+                          <input type="POST" class="form-control" id="email" placeholder="Student/Faculty ID" required="true" 
+                                 onkeypress="return isNumberKey(event);" maxlength="10">
                           <button class="btn btn-primary btn-lg gradient" type="submit">LOG IN</button>
                         </div>
                       </form>
@@ -43,14 +45,14 @@
                       <form>
                         <div class="form-group">
                         <label for="I.D">ENTER NAME:</label>
-                        <input type="POST" class="form-control" id="email" placeholder="Full Name" required>
+                        <input type="POST" class="form-control" id="email" placeholder="Full Name" required="true">
+                        <button class="btn btn-primary btn-lg gradient" type="submit">LOG IN</button>
                       </div>
                       </form>
                     </div>
                   </div>
                   </div>
                   <div class="modal-footer">
-                  <button class="btn btn-primary btn-lg gradient" type="submit" data-dismiss="modal">LOG IN</button>
                   </div>
               </div>
             </div>
@@ -58,15 +60,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 text-center">
-        <div class="panel panel-default">
           <div id="clockbox"></div>
-        </div>
         <button type="button" class="btn btn-primary btn-lg gradient" data-toggle="modal" data-target="#student">LOG IN FOR STUDENT/FACULTY</button>
         <button type="button" class="btn btn-primary btn-lg gradient" data-toggle="modal" data-target="#guest">LOG IN FOR GUEST</button> 
         <div class="container" id="table">
-          <h3>LOG-IN HISTORY</h3> 
-          <div class="panel panel-default">
-          <div class="table-responsive">        
+          <h1>LOG-IN HISTORY</h1> 
+          <div class="panel panel-default">     
+          <div class="table-responsive"> 
               <table class="table" id="login">
                 <thead>
                     <tr>
@@ -81,49 +81,45 @@
                     <td>Monday, November 6, 2017, 9:15 PM</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                     <tr>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>a</td>
                     </tr>
                 </tbody>
               </table>
             </div>
-            </div>
-      </div>    
+            </div>  
+          </div>
       </div>
       <div class="col-md-8">
-        <img src="WF1Resize2.png" class="img-fluid">
+        <img src="WF.png" class="img-fluid">
       </div>
     </div>
   </div>
 
 
   <footer>
-    <div class="footer-bottom fixed-bottom">
-    <div class="container">
+    <div class="footer-bottom">
+      <div class="container">
        <p id="footer">Copyright © Clinic of Mindanao State University-Iligan Institute of Technology. All right reserved.</p>
     </div>
     </div>
